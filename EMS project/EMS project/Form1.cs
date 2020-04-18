@@ -16,5 +16,15 @@ namespace EMS_project
         {
             InitializeComponent();
         }
+
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
