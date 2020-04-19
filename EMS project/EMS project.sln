@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS project", "EMS project\EMS project.csproj", "{31502315-C602-4844-BCCF-7EC81D7BDAAC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Entities", "Entities", "{39FEE701-F3DF-4A03-A2DD-E1D47B5B6F36}"
+	ProjectSection(SolutionItems) = preProject
+		Base Entity.cs = Base Entity.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
