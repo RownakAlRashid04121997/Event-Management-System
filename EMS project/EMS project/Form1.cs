@@ -48,12 +48,14 @@ namespace EMS_project
                 {
                     MessageBox.Show("Logged in as admin");
                     AdminPage a1 = new AdminPage(dt2.Rows[0][0].ToString(),this);
+                    AdminClass.AdminName = UserNameTextbox.Text;
                     a1.Show();
                     this.Hide();
                 }
                 else {
                     MessageBox.Show("Logged in as user");
                     UserPage u1 = new UserPage(dt2.Rows[0][0].ToString(),this);
+                    UserClass.UserName = UserNameTextbox.Text;
                     u1.Show();
                     this.Hide();
 
@@ -67,6 +69,7 @@ namespace EMS_project
             }
 
             LogIncmd.Connection.Close();
+
 
         }
     }

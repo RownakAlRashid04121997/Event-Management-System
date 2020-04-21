@@ -33,6 +33,11 @@ namespace EMS_project
             AdminBack.Show();
             this.Close();
         }
+
+        private void AdminPage_Load(object sender, EventArgs e)
+        {
+            WelcomeAdminlabel.Text = AdminClass.AdminName;
+        }
         }
     }
 

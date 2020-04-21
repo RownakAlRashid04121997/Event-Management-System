@@ -31,5 +31,10 @@ namespace EMS_project
             UserBack.Show();
             this.Close();
         }
+
+        private void UserPage_Load(object sender, EventArgs e)
+        {
+           WelcomeUserlabel.Text = UserClass.UserName ;
+        }
     }
 }
