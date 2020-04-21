@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.UserPageBackbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // UserPageBackbutton
+            // 
+            this.UserPageBackbutton.Location = new System.Drawing.Point(387, 288);
+            this.UserPageBackbutton.Name = "UserPageBackbutton";
+            this.UserPageBackbutton.Size = new System.Drawing.Size(75, 23);
+            this.UserPageBackbutton.TabIndex = 0;
+            this.UserPageBackbutton.Text = "Back";
+            this.UserPageBackbutton.UseVisualStyleBackColor = true;
+            this.UserPageBackbutton.Click += new System.EventHandler(this.UserPageBackbutton_Click);
             // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 332);
+            this.Controls.Add(this.UserPageBackbutton);
             this.Name = "UserPage";
             this.Text = "UserPage";
             this.ResumeLayout(false);
@@ -42,5 +54,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button UserPageBackbutton;
     }
 }

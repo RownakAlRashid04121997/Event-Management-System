@@ -12,21 +12,27 @@ namespace EMS_project
 {
     public partial class AdminPage : Form
     {
-        public AdminPage()
+        public string AdminId;
+        LoginForm Adminpage;
+
+        public AdminPage(string AdminId,LoginForm Adminpage)
         {
             InitializeComponent();
-           /* int AdminId = 1;
-            this.id = Id;
-            this.l1 = l1;
-            if (Id == AdminId.ToString())
-            {
-                MessageBox.Show("logged in as admin");
-            }
 
-            else
-            {
-                MessageBox.Show("logged in as user");
-            }*/
+            this.AdminId = AdminId;
+            this.Adminpage = Adminpage;
+        
+        }
+
+
+
+
+        private void AdminPageBackbutton_Click(object sender, EventArgs e)
+        {
+            LoginForm AdminBack = new LoginForm();
+            AdminBack.Show();
+            this.Close();
+        }
         }
     }
-}
+
