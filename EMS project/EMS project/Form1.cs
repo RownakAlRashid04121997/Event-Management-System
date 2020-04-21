@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace EMS_project
 {
@@ -26,6 +27,33 @@ namespace EMS_project
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            string LogInConnection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
+            string LogInsql = "select Username,Password " + " from LoginForm where UserName = '" + UserNameTextbox.Text + "' and Password = '" + PasswordTextbox.Text + "'";
+            SqlConnection LogInconn = new SqlConnection(LogInConnection);
+            SqlCommand LogIncmd = new SqlCommand(LogInsql, LogInconn);
+            DataTable dt2 = new DataTable();
+            LogIncmd.Connection.Open();
+            dt2.Load(LogIncmd.ExecuteReader());
+
+            if (dt2.Rows.Count > 0)
+            {
+                MessageBox.Show("logged successful");
+                //UserInfo u1 = new UserInfo(dt1.Rows[0][0].ToString(), this);
+                //u1.Show();
+                //this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Please check connection");
+            }
+
+            LogIncmd.Connection.Close();
 
         }
     }
