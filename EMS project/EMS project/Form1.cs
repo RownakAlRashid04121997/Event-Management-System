@@ -33,7 +33,7 @@ namespace EMS_project
         private void LogInButton_Click(object sender, EventArgs e)
         {
             string LogInConnection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
-            string LogInsql = "select Username,Password " + " from LoginForm where UserName = '" + UserNameTextbox.Text + "' and Password = '" + PasswordTextbox.Text + "'";
+            string LogInsql = "select Id,Username,Password " + " from LoginForm where UserName = '" + UserNameTextbox.Text + "' and Password = '" + PasswordTextbox.Text + "'";
             SqlConnection LogInconn = new SqlConnection(LogInConnection);
             SqlCommand LogIncmd = new SqlCommand(LogInsql, LogInconn);
             DataTable dt2 = new DataTable();
@@ -43,9 +43,22 @@ namespace EMS_project
             if (dt2.Rows.Count > 0)
             {
                 MessageBox.Show("logged successful");
-                //UserInfo u1 = new UserInfo(dt1.Rows[0][0].ToString(), this);
-                //u1.Show();
-                //this.Hide();
+
+                if (dt2.Rows[0][0].ToString() == 1.ToString())
+                {
+                    MessageBox.Show("Logged in as admin");
+                     AdminPage a1 = new AdminPage();
+                    a1.Show();
+                    this.Hide();
+                }
+                else {
+                    MessageBox.Show("Logged in as user");
+                    UserPage u1 = new UserPage();
+                    u1.Show();
+                    this.Hide();
+
+                }
+           
 
             }
             else
