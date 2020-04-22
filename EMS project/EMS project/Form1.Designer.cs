@@ -34,6 +34,7 @@
             this.PasswordTextbox = new System.Windows.Forms.TextBox();
             this.UserNameLebel = new System.Windows.Forms.Label();
             this.PasswordLebel = new System.Windows.Forms.Label();
+            this.EMSlabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // SignInButton
@@ -88,11 +89,22 @@
             this.PasswordLebel.TabIndex = 5;
             this.PasswordLebel.Text = "Password";
             // 
+            // EMSlabel
+            // 
+            this.EMSlabel.AutoSize = true;
+            this.EMSlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EMSlabel.Location = new System.Drawing.Point(95, 40);
+            this.EMSlabel.Name = "EMSlabel";
+            this.EMSlabel.Size = new System.Drawing.Size(228, 20);
+            this.EMSlabel.TabIndex = 6;
+            this.EMSlabel.Text = "Event Management System";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(412, 309);
+            this.Controls.Add(this.EMSlabel);
             this.Controls.Add(this.PasswordLebel);
             this.Controls.Add(this.UserNameLebel);
             this.Controls.Add(this.PasswordTextbox);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.TextBox PasswordTextbox;
         private System.Windows.Forms.Label UserNameLebel;
         private System.Windows.Forms.Label PasswordLebel;
+        private System.Windows.Forms.Label EMSlabel;
     }
 }
 

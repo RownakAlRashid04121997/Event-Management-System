@@ -47,14 +47,14 @@ namespace EMS_project
                 if (dt2.Rows[0][0].ToString() == 1.ToString())
                 {
                     MessageBox.Show("Logged in as admin");
-                    AdminPage a1 = new AdminPage(dt2.Rows[0][0].ToString(),this);
+                    AdminPage a1 = new AdminPage(dt2.Rows[0][0].ToString(), UserNameTextbox.Text,this);
                     AdminClass.AdminName = UserNameTextbox.Text;
                     a1.Show();
                     this.Hide();
                 }
                 else {
                     MessageBox.Show("Logged in as user");
-                    UserPage u1 = new UserPage(dt2.Rows[0][0].ToString(),this);
+                    UserPage u1 = new UserPage(dt2.Rows[0][0].ToString(), UserNameTextbox.Text,this);
                     UserClass.UserName = UserNameTextbox.Text;
                     u1.Show();
                     this.Hide();

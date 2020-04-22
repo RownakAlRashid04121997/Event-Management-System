@@ -13,12 +13,14 @@ namespace EMS_project
     public partial class UserPage : Form
     {
         public string UserId;
+        public string USERNAME1= UserClass.UserName;
         LoginForm Userpage;
 
-        public UserPage(string UserId,LoginForm Userpage)
+        public UserPage(string UserId,string USERNAME1,LoginForm Userpage)
         {
             InitializeComponent();
             this.UserId = UserId;
+            this.USERNAME1 =USERNAME1 ;
             this.Userpage = Userpage;
         }
 

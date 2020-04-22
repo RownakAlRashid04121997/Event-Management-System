@@ -13,13 +13,15 @@ namespace EMS_project
     public partial class AdminPage : Form
     {
         public string AdminId;
+        public string ADMINNAME1 = AdminClass.AdminName;
         LoginForm Adminpage;
 
-        public AdminPage(string AdminId,LoginForm Adminpage)
+        public AdminPage(string AdminId,string ADMINNAME1,LoginForm Adminpage)
         {
             InitializeComponent();
 
             this.AdminId = AdminId;
+            this.ADMINNAME1 = ADMINNAME1;
             this.Adminpage = Adminpage;
         
         }
