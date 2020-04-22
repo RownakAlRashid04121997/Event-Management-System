@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.EmployeeNamelabel = new System.Windows.Forms.Label();
             this.EmployeeNametextBox = new System.Windows.Forms.TextBox();
             this.EmployeeEmaillabel = new System.Windows.Forms.Label();
@@ -41,6 +42,13 @@
             this.AddEmployeebutton = new System.Windows.Forms.Button();
             this.EmployeePageNextbutton = new System.Windows.Forms.Button();
             this.EmployeePageBackbutton = new System.Windows.Forms.Button();
+            this.eMSdbDataSet = new EMS_project.EMSdbDataSet();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.employeeTableAdapter = new EMS_project.EMSdbDataSetTableAdapters.EmployeeTableAdapter();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.eMSdbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // EmployeeNamelabel
@@ -152,11 +160,34 @@
             this.EmployeePageBackbutton.UseVisualStyleBackColor = true;
             this.EmployeePageBackbutton.Click += new System.EventHandler(this.EmployeePageBackbutton_Click);
             // 
+            // eMSdbDataSet
+            // 
+            this.eMSdbDataSet.DataSetName = "EMSdbDataSet";
+            this.eMSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataMember = "Employee";
+            this.employeeBindingSource.DataSource = this.eMSdbDataSet;
+            // 
+            // employeeTableAdapter
+            // 
+            this.employeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(440, 24);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(554, 213);
+            this.dataGridView1.TabIndex = 13;
+            // 
             // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(492, 314);
+            this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.EmployeePageBackbutton);
             this.Controls.Add(this.EmployeePageNextbutton);
             this.Controls.Add(this.AddEmployeebutton);
@@ -173,6 +204,9 @@
             this.Name = "EmployeePage";
             this.Text = "EmployeePage";
             this.Load += new System.EventHandler(this.EmployeePage_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.eMSdbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,5 +227,9 @@
         private System.Windows.Forms.Button AddEmployeebutton;
         private System.Windows.Forms.Button EmployeePageNextbutton;
         private System.Windows.Forms.Button EmployeePageBackbutton;
+        private EMSdbDataSet eMSdbDataSet;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
+        private EMSdbDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
