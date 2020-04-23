@@ -42,12 +42,10 @@
             this.AddEmployeebutton = new System.Windows.Forms.Button();
             this.EmployeePageNextbutton = new System.Windows.Forms.Button();
             this.EmployeePageBackbutton = new System.Windows.Forms.Button();
-            this.eMSdbDataSet = new EMS_project.EMSdbDataSet();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new EMS_project.EMSdbDataSetTableAdapters.EmployeeTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.UpdateEmployeebutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.eMSdbDataSet)).BeginInit();
+            this.DeleteEmployeebutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -144,16 +142,17 @@
             // 
             // EmployeePageNextbutton
             // 
-            this.EmployeePageNextbutton.Location = new System.Drawing.Point(200, 262);
+            this.EmployeePageNextbutton.Location = new System.Drawing.Point(770, 262);
             this.EmployeePageNextbutton.Name = "EmployeePageNextbutton";
             this.EmployeePageNextbutton.Size = new System.Drawing.Size(117, 30);
             this.EmployeePageNextbutton.TabIndex = 11;
             this.EmployeePageNextbutton.Text = "Next";
             this.EmployeePageNextbutton.UseVisualStyleBackColor = true;
+            this.EmployeePageNextbutton.Click += new System.EventHandler(this.EmployeePageNextbutton_Click);
             // 
             // EmployeePageBackbutton
             // 
-            this.EmployeePageBackbutton.Location = new System.Drawing.Point(476, 262);
+            this.EmployeePageBackbutton.Location = new System.Drawing.Point(893, 262);
             this.EmployeePageBackbutton.Name = "EmployeePageBackbutton";
             this.EmployeePageBackbutton.Size = new System.Drawing.Size(117, 30);
             this.EmployeePageBackbutton.TabIndex = 12;
@@ -161,31 +160,17 @@
             this.EmployeePageBackbutton.UseVisualStyleBackColor = true;
             this.EmployeePageBackbutton.Click += new System.EventHandler(this.EmployeePageBackbutton_Click);
             // 
-            // eMSdbDataSet
-            // 
-            this.eMSdbDataSet.DataSetName = "EMSdbDataSet";
-            this.eMSdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.eMSdbDataSet;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(440, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(401, 24);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(554, 213);
+            this.dataGridView1.Size = new System.Drawing.Size(609, 213);
             this.dataGridView1.TabIndex = 13;
             // 
             // UpdateEmployeebutton
             // 
-            this.UpdateEmployeebutton.Location = new System.Drawing.Point(342, 262);
+            this.UpdateEmployeebutton.Location = new System.Drawing.Point(211, 262);
             this.UpdateEmployeebutton.Name = "UpdateEmployeebutton";
             this.UpdateEmployeebutton.Size = new System.Drawing.Size(117, 30);
             this.UpdateEmployeebutton.TabIndex = 14;
@@ -193,11 +178,22 @@
             this.UpdateEmployeebutton.UseVisualStyleBackColor = true;
             this.UpdateEmployeebutton.Click += new System.EventHandler(this.UpdateEmployeebutton_Click);
             // 
+            // DeleteEmployeebutton
+            // 
+            this.DeleteEmployeebutton.Location = new System.Drawing.Point(353, 262);
+            this.DeleteEmployeebutton.Name = "DeleteEmployeebutton";
+            this.DeleteEmployeebutton.Size = new System.Drawing.Size(117, 30);
+            this.DeleteEmployeebutton.TabIndex = 15;
+            this.DeleteEmployeebutton.Text = "Delete Employee";
+            this.DeleteEmployeebutton.UseVisualStyleBackColor = true;
+            this.DeleteEmployeebutton.Click += new System.EventHandler(this.DeleteEmployeebutton_Click);
+            // 
             // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.DeleteEmployeebutton);
             this.Controls.Add(this.UpdateEmployeebutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.EmployeePageBackbutton);
@@ -216,7 +212,6 @@
             this.Name = "EmployeePage";
             this.Text = "EmployeePage";
             this.Load += new System.EventHandler(this.EmployeePage_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.eMSdbDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -239,10 +234,9 @@
         private System.Windows.Forms.Button AddEmployeebutton;
         private System.Windows.Forms.Button EmployeePageNextbutton;
         private System.Windows.Forms.Button EmployeePageBackbutton;
-        private EMSdbDataSet eMSdbDataSet;
         private System.Windows.Forms.BindingSource employeeBindingSource;
-        private EMSdbDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button UpdateEmployeebutton;
+        private System.Windows.Forms.Button DeleteEmployeebutton;
     }
 }

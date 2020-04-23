@@ -1,4 +1,4 @@
- LoginForm Table Query:
+ LoginForm Table:
 
 
 CREATE TABLE [dbo].[LoginForm] (
@@ -8,3 +8,39 @@ CREATE TABLE [dbo].[LoginForm] (
     [Username] NCHAR (10)    NOT NULL,
     PRIMARY KEY CLUSTERED ([Id] ASC)
 );
+
+
+Employee table:
+
+CREATE TABLE [dbo].[Employee] (
+    [EmployeeId]     INT           IDENTITY (1, 1) NOT NULL,
+    [EmployeeName]   NVARCHAR (50) NOT NULL,
+    [EmployeeEmail]  NVARCHAR (50) NOT NULL,
+    [EmployeeDOB]    NVARCHAR (50) NOT NULL,
+    [EmployeePost]   NVARCHAR (50) NOT NULL,
+    [EmployeeSalary] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([EmployeeId] ASC)
+);
+
+
+insert query:
+
+  string AddEmployeesql = string.Format("insert into [Employee] ([EmployeeName],[EmployeeEmail],[EmployeeDOB],[EmployeePost],[EmployeeSalary]) Values('{0}','{1}','{2}','{3}','{4}')", EmployeeNametextBox.Text, EmployeeEmailtextBox.Text, EmployeeDOBtextBox.Text, EmployeePosttextBox.Text, EmployeeSalarytextBox.Text);
+
+
+
+update query:
+
+string AddEmployeesql = "update Employee set EmployeeEmail='"+EmployeeEmailtextBox.Text+"',EmployeeDOB='"+ EmployeeDOBtextBox.Text+"',EmployeePost='"+EmployeePosttextBox.Text+"',EmployeeSalary='"+EmployeeSalarytextBox.Text+"' where EmployeeName='"+EmployeeNametextBox.Text+"'" ;
+
+
+
+delete query:
+
+string AddEmployeesql = "Delete from Employee where EmployeeName='"+EmployeeNametextBox.Text+"'";
+
+
+
+
+
+
