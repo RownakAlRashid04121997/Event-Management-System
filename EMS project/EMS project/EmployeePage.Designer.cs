@@ -46,6 +46,7 @@
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeeTableAdapter = new EMS_project.EMSdbDataSetTableAdapters.EmployeeTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.UpdateEmployeebutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.eMSdbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -152,7 +153,7 @@
             // 
             // EmployeePageBackbutton
             // 
-            this.EmployeePageBackbutton.Location = new System.Drawing.Point(337, 262);
+            this.EmployeePageBackbutton.Location = new System.Drawing.Point(476, 262);
             this.EmployeePageBackbutton.Name = "EmployeePageBackbutton";
             this.EmployeePageBackbutton.Size = new System.Drawing.Size(117, 30);
             this.EmployeePageBackbutton.TabIndex = 12;
@@ -182,11 +183,22 @@
             this.dataGridView1.Size = new System.Drawing.Size(554, 213);
             this.dataGridView1.TabIndex = 13;
             // 
+            // UpdateEmployeebutton
+            // 
+            this.UpdateEmployeebutton.Location = new System.Drawing.Point(342, 262);
+            this.UpdateEmployeebutton.Name = "UpdateEmployeebutton";
+            this.UpdateEmployeebutton.Size = new System.Drawing.Size(117, 30);
+            this.UpdateEmployeebutton.TabIndex = 14;
+            this.UpdateEmployeebutton.Text = "Update Employee";
+            this.UpdateEmployeebutton.UseVisualStyleBackColor = true;
+            this.UpdateEmployeebutton.Click += new System.EventHandler(this.UpdateEmployeebutton_Click);
+            // 
             // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.UpdateEmployeebutton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.EmployeePageBackbutton);
             this.Controls.Add(this.EmployeePageNextbutton);
@@ -231,5 +243,6 @@
         private System.Windows.Forms.BindingSource employeeBindingSource;
         private EMSdbDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button UpdateEmployeebutton;
     }
 }

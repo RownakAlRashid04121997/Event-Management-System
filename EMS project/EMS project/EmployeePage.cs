@@ -14,7 +14,11 @@ namespace EMS_project
     public partial class EmployeePage : Form
     {
         string _connectionString;
-        DataTable AddEmployeedt = new DataTable();
+       // SqlDataAdapter sda;
+       // SqlCommandBuilder scb;
+        //DataTable dt;
+       
+
 
         public EmployeePage()
         {
@@ -39,7 +43,7 @@ namespace EMS_project
             SqlConnection AddEmployeecon = new SqlConnection(_connectionString);
             SqlCommand AddEmployeecmd = new SqlCommand(AddEmployeesql, AddEmployeecon);
 
-           
+            DataTable AddEmployeedt = new DataTable();
             AddEmployeecmd.Connection.Open();
             AddEmployeecmd.ExecuteNonQuery();
             MessageBox.Show("Employee added");
@@ -70,6 +74,23 @@ namespace EMS_project
             sqlCmd.Connection.Close();
 
           }
+
+        private void UpdateEmployeebutton_Click(object sender, EventArgs e)
+        {
+            string AddEmployeesql = "update Employee set EmployeeEmail='"+EmployeeEmailtextBox.Text+"' where EmployeeName='"+EmployeeNametextBox.Text+"'" ;
+            SqlConnection AddEmployeecon = new SqlConnection(_connectionString);
+            SqlCommand AddEmployeecmd = new SqlCommand(AddEmployeesql, AddEmployeecon);
+
+            DataTable AddEmployeedt = new DataTable();
+            AddEmployeecmd.Connection.Open();
+            AddEmployeecmd.ExecuteNonQuery();
+            MessageBox.Show("Email updated");
+            AddEmployeecmd.Connection.Close();
+            LoadUserGridData();
+
+        }
+
+   
 
     }
 }
