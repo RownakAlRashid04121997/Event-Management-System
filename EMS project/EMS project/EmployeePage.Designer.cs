@@ -46,6 +46,9 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.UpdateEmployeebutton = new System.Windows.Forms.Button();
             this.DeleteEmployeebutton = new System.Windows.Forms.Button();
+            this.EmployeeSearchbutton = new System.Windows.Forms.Button();
+            this.EmployeeSearchtextBox = new System.Windows.Forms.TextBox();
+            this.EmployeecomboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -132,7 +135,7 @@
             // 
             // AddEmployeebutton
             // 
-            this.AddEmployeebutton.Location = new System.Drawing.Point(68, 262);
+            this.AddEmployeebutton.Location = new System.Drawing.Point(58, 272);
             this.AddEmployeebutton.Name = "AddEmployeebutton";
             this.AddEmployeebutton.Size = new System.Drawing.Size(117, 30);
             this.AddEmployeebutton.TabIndex = 10;
@@ -142,7 +145,7 @@
             // 
             // EmployeePageNextbutton
             // 
-            this.EmployeePageNextbutton.Location = new System.Drawing.Point(770, 262);
+            this.EmployeePageNextbutton.Location = new System.Drawing.Point(770, 272);
             this.EmployeePageNextbutton.Name = "EmployeePageNextbutton";
             this.EmployeePageNextbutton.Size = new System.Drawing.Size(117, 30);
             this.EmployeePageNextbutton.TabIndex = 11;
@@ -152,7 +155,7 @@
             // 
             // EmployeePageBackbutton
             // 
-            this.EmployeePageBackbutton.Location = new System.Drawing.Point(893, 262);
+            this.EmployeePageBackbutton.Location = new System.Drawing.Point(893, 272);
             this.EmployeePageBackbutton.Name = "EmployeePageBackbutton";
             this.EmployeePageBackbutton.Size = new System.Drawing.Size(117, 30);
             this.EmployeePageBackbutton.TabIndex = 12;
@@ -163,14 +166,14 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(401, 24);
+            this.dataGridView1.Location = new System.Drawing.Point(401, 43);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(609, 213);
             this.dataGridView1.TabIndex = 13;
             // 
             // UpdateEmployeebutton
             // 
-            this.UpdateEmployeebutton.Location = new System.Drawing.Point(211, 262);
+            this.UpdateEmployeebutton.Location = new System.Drawing.Point(201, 272);
             this.UpdateEmployeebutton.Name = "UpdateEmployeebutton";
             this.UpdateEmployeebutton.Size = new System.Drawing.Size(117, 30);
             this.UpdateEmployeebutton.TabIndex = 14;
@@ -180,7 +183,7 @@
             // 
             // DeleteEmployeebutton
             // 
-            this.DeleteEmployeebutton.Location = new System.Drawing.Point(353, 262);
+            this.DeleteEmployeebutton.Location = new System.Drawing.Point(343, 272);
             this.DeleteEmployeebutton.Name = "DeleteEmployeebutton";
             this.DeleteEmployeebutton.Size = new System.Drawing.Size(117, 30);
             this.DeleteEmployeebutton.TabIndex = 15;
@@ -188,11 +191,40 @@
             this.DeleteEmployeebutton.UseVisualStyleBackColor = true;
             this.DeleteEmployeebutton.Click += new System.EventHandler(this.DeleteEmployeebutton_Click);
             // 
+            // EmployeeSearchbutton
+            // 
+            this.EmployeeSearchbutton.Location = new System.Drawing.Point(905, 12);
+            this.EmployeeSearchbutton.Name = "EmployeeSearchbutton";
+            this.EmployeeSearchbutton.Size = new System.Drawing.Size(75, 25);
+            this.EmployeeSearchbutton.TabIndex = 16;
+            this.EmployeeSearchbutton.Text = "Search";
+            this.EmployeeSearchbutton.UseVisualStyleBackColor = true;
+            this.EmployeeSearchbutton.Click += new System.EventHandler(this.EmployeeSearchbutton_Click);
+            // 
+            // EmployeeSearchtextBox
+            // 
+            this.EmployeeSearchtextBox.Location = new System.Drawing.Point(674, 15);
+            this.EmployeeSearchtextBox.Name = "EmployeeSearchtextBox";
+            this.EmployeeSearchtextBox.Size = new System.Drawing.Size(225, 20);
+            this.EmployeeSearchtextBox.TabIndex = 17;
+            this.EmployeeSearchtextBox.TextChanged += new System.EventHandler(this.EmployeeSearchtextBox_TextChanged);
+            // 
+            // EmployeecomboBox
+            // 
+            this.EmployeecomboBox.FormattingEnabled = true;
+            this.EmployeecomboBox.Location = new System.Drawing.Point(430, 16);
+            this.EmployeecomboBox.Name = "EmployeecomboBox";
+            this.EmployeecomboBox.Size = new System.Drawing.Size(238, 21);
+            this.EmployeecomboBox.TabIndex = 18;
+            // 
             // EmployeePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 314);
+            this.Controls.Add(this.EmployeecomboBox);
+            this.Controls.Add(this.EmployeeSearchtextBox);
+            this.Controls.Add(this.EmployeeSearchbutton);
             this.Controls.Add(this.DeleteEmployeebutton);
             this.Controls.Add(this.UpdateEmployeebutton);
             this.Controls.Add(this.dataGridView1);
@@ -238,5 +270,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button UpdateEmployeebutton;
         private System.Windows.Forms.Button DeleteEmployeebutton;
+        private System.Windows.Forms.Button EmployeeSearchbutton;
+        private System.Windows.Forms.TextBox EmployeeSearchtextBox;
+        private System.Windows.Forms.ComboBox EmployeecomboBox;
     }
 }
