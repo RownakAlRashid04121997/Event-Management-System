@@ -41,6 +41,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // UserPageBackbutton
@@ -87,7 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(35, 179);
+            this.label3.Location = new System.Drawing.Point(32, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 4;
@@ -96,7 +98,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(35, 223);
+            this.label4.Location = new System.Drawing.Point(32, 223);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 5;
@@ -105,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 269);
+            this.label5.Location = new System.Drawing.Point(35, 375);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 17);
             this.label5.TabIndex = 6;
@@ -114,7 +116,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(38, 313);
+            this.label6.Location = new System.Drawing.Point(32, 427);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 17);
             this.label6.TabIndex = 7;
@@ -150,7 +152,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 269);
+            this.textBox2.Location = new System.Drawing.Point(196, 375);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(201, 22);
             this.textBox2.TabIndex = 11;
@@ -158,17 +160,42 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(196, 313);
+            this.textBox3.Location = new System.Drawing.Point(196, 424);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(361, 83);
             this.textBox3.TabIndex = 12;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 258);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Instruments";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Accoustic Guitar",
+            "Electric Guitar",
+            "Piaono",
+            "Drums",
+            "Fluet"});
+            this.checkedListBox1.Location = new System.Drawing.Point(196, 255);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(200, 106);
+            this.checkedListBox1.TabIndex = 14;
             // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 581);
+            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dateTimePicker1);
@@ -206,5 +233,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
