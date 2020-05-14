@@ -39,9 +39,10 @@
             // 
             // SignInButton
             // 
-            this.SignInButton.Location = new System.Drawing.Point(71, 226);
+            this.SignInButton.Location = new System.Drawing.Point(95, 278);
+            this.SignInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SignInButton.Name = "SignInButton";
-            this.SignInButton.Size = new System.Drawing.Size(110, 45);
+            this.SignInButton.Size = new System.Drawing.Size(147, 55);
             this.SignInButton.TabIndex = 0;
             this.SignInButton.Text = "Sign Up";
             this.SignInButton.UseVisualStyleBackColor = true;
@@ -49,9 +50,10 @@
             // 
             // LogInButton
             // 
-            this.LogInButton.Location = new System.Drawing.Point(200, 226);
+            this.LogInButton.Location = new System.Drawing.Point(267, 278);
+            this.LogInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LogInButton.Name = "LogInButton";
-            this.LogInButton.Size = new System.Drawing.Size(110, 45);
+            this.LogInButton.Size = new System.Drawing.Size(147, 55);
             this.LogInButton.TabIndex = 1;
             this.LogInButton.Text = "Login";
             this.LogInButton.UseVisualStyleBackColor = true;
@@ -59,33 +61,37 @@
             // 
             // UserNameTextbox
             // 
-            this.UserNameTextbox.Location = new System.Drawing.Point(158, 100);
+            this.UserNameTextbox.Location = new System.Drawing.Point(211, 123);
+            this.UserNameTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserNameTextbox.Name = "UserNameTextbox";
-            this.UserNameTextbox.Size = new System.Drawing.Size(204, 20);
+            this.UserNameTextbox.Size = new System.Drawing.Size(271, 22);
             this.UserNameTextbox.TabIndex = 2;
             // 
             // PasswordTextbox
             // 
-            this.PasswordTextbox.Location = new System.Drawing.Point(158, 146);
+            this.PasswordTextbox.Location = new System.Drawing.Point(211, 180);
+            this.PasswordTextbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PasswordTextbox.Name = "PasswordTextbox";
-            this.PasswordTextbox.Size = new System.Drawing.Size(204, 20);
+            this.PasswordTextbox.Size = new System.Drawing.Size(271, 22);
             this.PasswordTextbox.TabIndex = 3;
             // 
             // UserNameLebel
             // 
             this.UserNameLebel.AutoSize = true;
-            this.UserNameLebel.Location = new System.Drawing.Point(68, 103);
+            this.UserNameLebel.Location = new System.Drawing.Point(91, 127);
+            this.UserNameLebel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserNameLebel.Name = "UserNameLebel";
-            this.UserNameLebel.Size = new System.Drawing.Size(57, 13);
+            this.UserNameLebel.Size = new System.Drawing.Size(75, 17);
             this.UserNameLebel.TabIndex = 4;
             this.UserNameLebel.Text = "UserName";
             // 
             // PasswordLebel
             // 
             this.PasswordLebel.AutoSize = true;
-            this.PasswordLebel.Location = new System.Drawing.Point(68, 149);
+            this.PasswordLebel.Location = new System.Drawing.Point(91, 183);
+            this.PasswordLebel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PasswordLebel.Name = "PasswordLebel";
-            this.PasswordLebel.Size = new System.Drawing.Size(53, 13);
+            this.PasswordLebel.Size = new System.Drawing.Size(69, 17);
             this.PasswordLebel.TabIndex = 5;
             this.PasswordLebel.Text = "Password";
             // 
@@ -93,17 +99,18 @@
             // 
             this.EMSlabel.AutoSize = true;
             this.EMSlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EMSlabel.Location = new System.Drawing.Point(95, 40);
+            this.EMSlabel.Location = new System.Drawing.Point(138, 54);
+            this.EMSlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EMSlabel.Name = "EMSlabel";
-            this.EMSlabel.Size = new System.Drawing.Size(228, 20);
+            this.EMSlabel.Size = new System.Drawing.Size(276, 25);
             this.EMSlabel.TabIndex = 6;
             this.EMSlabel.Text = "Event Management System";
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 309);
+            this.ClientSize = new System.Drawing.Size(549, 380);
             this.Controls.Add(this.EMSlabel);
             this.Controls.Add(this.PasswordLebel);
             this.Controls.Add(this.UserNameLebel);
@@ -111,6 +118,7 @@
             this.Controls.Add(this.UserNameTextbox);
             this.Controls.Add(this.LogInButton);
             this.Controls.Add(this.SignInButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LoginForm";
             this.Text = "LoginForm";
             this.Load += new System.EventHandler(this.LoginForm_Load);

@@ -18,7 +18,7 @@ namespace EMS_project
          public EmployeePage()
         {
             InitializeComponent();
-            _connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30 ";
+            _connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Chowdhury\Documents\GitHub\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30 ";
 
 
         }
