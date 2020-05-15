@@ -35,20 +35,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // UserPageBackbutton
             // 
-            this.UserPageBackbutton.Location = new System.Drawing.Point(601, 511);
-            this.UserPageBackbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserPageBackbutton.Location = new System.Drawing.Point(591, 523);
+            this.UserPageBackbutton.Margin = new System.Windows.Forms.Padding(4);
             this.UserPageBackbutton.Name = "UserPageBackbutton";
             this.UserPageBackbutton.Size = new System.Drawing.Size(100, 28);
             this.UserPageBackbutton.TabIndex = 0;
@@ -107,20 +114,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 375);
+            this.label5.Location = new System.Drawing.Point(44, 467);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Vanue";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 427);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(60, 17);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Address";
             // 
             // comboBox1
             // 
@@ -152,19 +150,12 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(196, 375);
+            this.textBox2.Location = new System.Drawing.Point(196, 467);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 22);
+            this.textBox2.Size = new System.Drawing.Size(270, 43);
             this.textBox2.TabIndex = 11;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(196, 424);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(361, 83);
-            this.textBox3.TabIndex = 12;
             // 
             // label7
             // 
@@ -175,33 +166,157 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "Instruments";
             // 
-            // checkedListBox1
+            // comboBox3
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Accoustic Guitar",
-            "Electric Guitar",
-            "Piaono",
-            "Drums",
-            "Fluet"});
-            this.checkedListBox1.Location = new System.Drawing.Point(196, 255);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(200, 106);
-            this.checkedListBox1.TabIndex = 14;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBox3.Location = new System.Drawing.Point(345, 258);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 24);
+            this.comboBox3.TabIndex = 15;
+            this.comboBox3.Text = "Number of set";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBox5.Location = new System.Drawing.Point(345, 302);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(121, 24);
+            this.comboBox5.TabIndex = 17;
+            this.comboBox5.Text = "Number of set";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBox7.Location = new System.Drawing.Point(345, 342);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(121, 24);
+            this.comboBox7.TabIndex = 19;
+            this.comboBox7.Text = "Number of set";
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBox9.Location = new System.Drawing.Point(345, 385);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(121, 24);
+            this.comboBox9.TabIndex = 21;
+            this.comboBox9.Text = "Number of set";
+            // 
+            // comboBox11
+            // 
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.comboBox11.Location = new System.Drawing.Point(345, 428);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(121, 24);
+            this.comboBox11.TabIndex = 23;
+            this.comboBox11.Text = "Number of set";
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "Accoustic Guitar"});
+            this.comboBox10.Location = new System.Drawing.Point(196, 428);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(121, 24);
+            this.comboBox10.TabIndex = 22;
+            this.comboBox10.Text = "None";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "Electric Guitar"});
+            this.comboBox8.Location = new System.Drawing.Point(196, 385);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(121, 24);
+            this.comboBox8.TabIndex = 20;
+            this.comboBox8.Text = "None";
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Drums"});
+            this.comboBox6.Location = new System.Drawing.Point(196, 342);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(121, 24);
+            this.comboBox6.TabIndex = 18;
+            this.comboBox6.Text = "None";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Piano"});
+            this.comboBox4.Location = new System.Drawing.Point(196, 302);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 24);
+            this.comboBox4.TabIndex = 16;
+            this.comboBox4.Tag = "None";
+            this.comboBox4.Text = "None";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Sound System"});
+            this.comboBox2.Location = new System.Drawing.Point(196, 258);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 14;
+            this.comboBox2.Text = "None";
             // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 581);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.comboBox11);
+            this.Controls.Add(this.comboBox10);
+            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -209,7 +324,7 @@
             this.Controls.Add(this.WelcomeUserlabel);
             this.Controls.Add(this.UserPageBackbutton);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UserPage";
             this.Text = "UserPage";
             this.Load += new System.EventHandler(this.UserPage_Load);
@@ -227,13 +342,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
