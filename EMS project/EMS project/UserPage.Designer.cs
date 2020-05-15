@@ -170,6 +170,7 @@
             // 
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -185,6 +186,7 @@
             // 
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -200,6 +202,7 @@
             // 
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -215,6 +218,7 @@
             // 
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
@@ -230,6 +234,7 @@
             // 
             this.comboBox11.FormattingEnabled = true;
             this.comboBox11.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
