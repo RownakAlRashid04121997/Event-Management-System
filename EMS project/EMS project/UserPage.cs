@@ -110,7 +110,7 @@ namespace EMS_project
         {
             OrderUserIdtextBox.Text = UserId;
            string Connection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
-           string sql1 = string.Format("insert into [Order] ([OrderUserId],[EventType],[EventName],[EventDate],[Instrument1 ammount],[Instrument2 ammount],[Instrument3 ammount],[Instrument4 ammount],[Instrument5 ammount],[UserVenue]) Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", OrderUserIdtextBox.Text, comboBox1.Text, EventNametextBox.Text, EventDatetextBox.Text, Instrument1ElementcomboBox.Text, Instrument2ElementcomboBox.Text, Instrument3ElementcomboBox.Text, Instrument4ElementcomboBox.Text, Instrument5ElementcomboBox.Text, VenuetextBox.Text);
+           string sql1 = string.Format("insert into [Order] ([OrderUserId],[EventType],[EventName],[EventDate],[Instrument1 ammount],[Instrument2 ammount],[Instrument3 ammount],[Instrument4 ammount],[Instrument5 ammount],[UserVenue]) Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}')", OrderUserIdtextBox.Text, comboBox1.Text, EventNametextBox.Text, EventDatetextBox.Text, Instrument1ElementcomboBox.Text, Instrument2ElementcomboBox.Text, Instrument3ElementcomboBox.Text, Instrument4ElementcomboBox.Text, Instrument5ElementcomboBox.Text, VenuetextBox.Text);
             SqlConnection con1 = new SqlConnection(Connection);
             SqlCommand cmd1 = new SqlCommand(sql1, con1);
 
