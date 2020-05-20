@@ -32,7 +32,7 @@ namespace EMS_project
 
         private void LogInButton_Click(object sender, EventArgs e)
         {
-            string LogInConnection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Chowdhury\Documents\GitHub\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
+            string LogInConnection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
             string LogInsql = "select Id,Username,Password " + " from LoginForm where UserName = '" + UserNameTextbox.Text + "' and Password = '" + PasswordTextbox.Text + "'";
             SqlConnection LogInconn = new SqlConnection(LogInConnection);
             SqlCommand LogIncmd = new SqlCommand(LogInsql, LogInconn);
