@@ -13,7 +13,7 @@ namespace EMS_project
 {
     public partial class UserSignIn : Form
     {
-        string SignInConnection1 = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdfIntegrated Security=True;Connect Timeout=30";
+        string SignInConnection1 =@"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
         public UserSignIn()
         {
             InitializeComponent();
