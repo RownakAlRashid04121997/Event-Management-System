@@ -54,6 +54,13 @@ namespace EMS_project
             GoToEmployee.Show();
             this.Hide();
         }
+
+        private void SeeOrderPagebutton_Click(object sender, EventArgs e)
+        {
+            OrderTable o1 = new OrderTable();
+            o1.Show();
+            this.Hide();
+        }
         }
     }
 

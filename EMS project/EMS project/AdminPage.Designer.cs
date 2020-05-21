@@ -31,6 +31,7 @@
             this.AdminPageBackbutton = new System.Windows.Forms.Button();
             this.WelcomeAdminlabel = new System.Windows.Forms.Label();
             this.GoToEmployyePagebutton = new System.Windows.Forms.Button();
+            this.SeeOrderPagebutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AdminPageBackbutton
@@ -63,11 +64,22 @@
             this.GoToEmployyePagebutton.UseVisualStyleBackColor = true;
             this.GoToEmployyePagebutton.Click += new System.EventHandler(this.GoToEmployyePagebutton_Click);
             // 
+            // SeeOrderPagebutton
+            // 
+            this.SeeOrderPagebutton.Location = new System.Drawing.Point(113, 161);
+            this.SeeOrderPagebutton.Name = "SeeOrderPagebutton";
+            this.SeeOrderPagebutton.Size = new System.Drawing.Size(281, 46);
+            this.SeeOrderPagebutton.TabIndex = 4;
+            this.SeeOrderPagebutton.Text = "See Order Page";
+            this.SeeOrderPagebutton.UseVisualStyleBackColor = true;
+            this.SeeOrderPagebutton.Click += new System.EventHandler(this.SeeOrderPagebutton_Click);
+            // 
             // AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(496, 328);
+            this.Controls.Add(this.SeeOrderPagebutton);
             this.Controls.Add(this.GoToEmployyePagebutton);
             this.Controls.Add(this.WelcomeAdminlabel);
             this.Controls.Add(this.AdminPageBackbutton);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Button AdminPageBackbutton;
         private System.Windows.Forms.Label WelcomeAdminlabel;
         private System.Windows.Forms.Button GoToEmployyePagebutton;
+        private System.Windows.Forms.Button SeeOrderPagebutton;
     }
 }
