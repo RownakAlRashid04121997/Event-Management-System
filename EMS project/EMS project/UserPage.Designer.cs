@@ -53,11 +53,13 @@
             this.Instrument3ElementcomboBox = new System.Windows.Forms.ComboBox();
             this.Instrument4ElementcomboBox = new System.Windows.Forms.ComboBox();
             this.Instrument5ElementcomboBox = new System.Windows.Forms.ComboBox();
+            this.UpdateOrderbutton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UserPageBackbutton
             // 
-            this.UserPageBackbutton.Location = new System.Drawing.Point(443, 425);
+            this.UserPageBackbutton.Location = new System.Drawing.Point(700, 431);
             this.UserPageBackbutton.Name = "UserPageBackbutton";
             this.UserPageBackbutton.Size = new System.Drawing.Size(75, 23);
             this.UserPageBackbutton.TabIndex = 0;
@@ -174,7 +176,7 @@
             // 
             // PlaceOrderbutton
             // 
-            this.PlaceOrderbutton.Location = new System.Drawing.Point(149, 425);
+            this.PlaceOrderbutton.Location = new System.Drawing.Point(12, 425);
             this.PlaceOrderbutton.Name = "PlaceOrderbutton";
             this.PlaceOrderbutton.Size = new System.Drawing.Size(202, 35);
             this.PlaceOrderbutton.TabIndex = 26;
@@ -288,11 +290,33 @@
             this.Instrument5ElementcomboBox.Size = new System.Drawing.Size(121, 21);
             this.Instrument5ElementcomboBox.TabIndex = 44;
             // 
+            // UpdateOrderbutton
+            // 
+            this.UpdateOrderbutton.Location = new System.Drawing.Point(458, 431);
+            this.UpdateOrderbutton.Name = "UpdateOrderbutton";
+            this.UpdateOrderbutton.Size = new System.Drawing.Size(202, 35);
+            this.UpdateOrderbutton.TabIndex = 45;
+            this.UpdateOrderbutton.Text = "Update order";
+            this.UpdateOrderbutton.UseVisualStyleBackColor = true;
+            this.UpdateOrderbutton.Click += new System.EventHandler(this.UpdateOrderbutton_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(233, 431);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 35);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Delete order";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // UserPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 472);
+            this.ClientSize = new System.Drawing.Size(804, 472);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.UpdateOrderbutton);
             this.Controls.Add(this.Instrument5ElementcomboBox);
             this.Controls.Add(this.Instrument4ElementcomboBox);
             this.Controls.Add(this.Instrument3ElementcomboBox);
@@ -353,5 +377,7 @@
         private System.Windows.Forms.ComboBox Instrument3ElementcomboBox;
         private System.Windows.Forms.ComboBox Instrument4ElementcomboBox;
         private System.Windows.Forms.ComboBox Instrument5ElementcomboBox;
+        private System.Windows.Forms.Button UpdateOrderbutton;
+        private System.Windows.Forms.Button button1;
     }
 }
