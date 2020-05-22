@@ -34,7 +34,7 @@ namespace EMS_project
           private void OrderTable_Load(object sender, EventArgs e)
         {
            // LoadUserGridData();
-          /*  try
+            try
             {
                 string ConnectionString = _connectionString;
                 // string sql = string.Format("SELECT * FROM  Order");
@@ -49,7 +49,7 @@ namespace EMS_project
                 dataGridView1.DataSource = dt;
                 sqlCmd.Connection.Close();
             }
-            catch (Exception E) { }*/
+            catch (Exception E) { MessageBox.Show(E.Message); }
         }
           /*void LoadUserGridData()
           {

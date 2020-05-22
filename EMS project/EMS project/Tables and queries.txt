@@ -23,6 +23,26 @@ CREATE TABLE [dbo].[Employee] (
 );
 
 
+
+Order table:
+
+
+CREATE TABLE [dbo].[Order] (
+    [Order Id]             INT           IDENTITY (1, 1) NOT NULL,
+    [OrderUserId]          NVARCHAR (50) NOT NULL,
+    [EventType]            NVARCHAR (50) NOT NULL,
+    [EventName]            NVARCHAR (50) NOT NULL,
+    [EventDate]            NVARCHAR (50) NULL,
+    [Instrument1 ammount]  NVARCHAR (50) NULL,
+    [Instrument2 ammount ] NVARCHAR (50) NULL,
+    [Instrument3 ammount ] NVARCHAR (50) NULL,
+    [Instrument4 ammount ] NVARCHAR (50) NULL,
+    [Instrument5 ammount ] NVARCHAR (50) NULL,
+    [UserVenue]            NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Order Id] ASC)
+);
+
+
 insert query:
 
   string AddEmployeesql = string.Format("insert into [Employee] ([EmployeeName],[EmployeeEmail],[EmployeeDOB],[EmployeePost],[EmployeeSalary]) Values('{0}','{1}','{2}','{3}','{4}')", EmployeeNametextBox.Text, EmployeeEmailtextBox.Text, EmployeeDOBtextBox.Text, EmployeePosttextBox.Text, EmployeeSalarytextBox.Text);
