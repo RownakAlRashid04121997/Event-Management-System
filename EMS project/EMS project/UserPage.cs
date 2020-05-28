@@ -156,7 +156,7 @@ namespace EMS_project
             {
                 OrderUserIdtextBox.Text = UserId;
                 string Connection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
-                string sql1 = "update Order set EventType='" + this.comboBox1.Text + "',EventName='" + this.EventNametextBox.Text + "',EventDate='" + this.EventDatetextBox.Text + "',Instrument1 ammount='" + this.Instrument1ElementcomboBox.Text + "',Instrument2 ammount='" + this.Instrument2ElementcomboBox.Text + "',Instrument3 ammount='" + this.Instrument3ElementcomboBox.Text + "',Instrument4 ammount='" + this.Instrument4ElementcomboBox.Text + "',Instrument5 ammount='" + this.Instrument5ElementcomboBox.Text + "',UserVenue='" + this.VenuetextBox.Text + "' where OrderUserId='" + this.OrderUserIdtextBox.Text + "'";
+                string sql1 = "Update [dbo].[Order] set EventType='" + this.comboBox1.Text + "',EventName='" + this.EventNametextBox.Text + "',EventDate='" + this.EventDatetextBox.Text + "',Instrument1 ammount='" + this.Instrument1ElementcomboBox.Text + "',Instrument2 ammount='" + this.Instrument2ElementcomboBox.Text + "',Instrument3 ammount='" + this.Instrument3ElementcomboBox.Text + "',Instrument4 ammount='" + this.Instrument4ElementcomboBox.Text + "',Instrument5 ammount='" + this.Instrument5ElementcomboBox.Text + "',UserVenue='" + this.VenuetextBox.Text + "' where OrderUserId='" + this.OrderUserIdtextBox.Text + "'";
                 SqlConnection con1 = new SqlConnection(Connection);
                 SqlCommand cmd1 = new SqlCommand(sql1, con1);
 
@@ -177,7 +177,7 @@ namespace EMS_project
             try
             {
                 string _connectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\Sunan\c#\EMS\Project-101\EMS project\EMS project\EMSdb.mdf;Integrated Security=True;Connect Timeout=30";
-                string AddEmployeesql = "Delete * from Order where OrderUserId='" + OrderUserIdtextBox.Text + "'";
+                string AddEmployeesql = "Delete * from  [dbo].[Order] where OrderUserId='" + OrderUserIdtextBox.Text + "'";
                 SqlConnection AddEmployeecon = new SqlConnection(_connectionString);
                 SqlCommand AddEmployeecmd = new SqlCommand(AddEmployeesql, AddEmployeecon);
 

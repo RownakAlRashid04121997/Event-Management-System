@@ -38,7 +38,7 @@ namespace EMS_project
             {
                 string ConnectionString = _connectionString;
                 // string sql = string.Format("SELECT * FROM  Order");
-                string sql = string.Format(" SELECT *FROM ORDER");
+                string sql = string.Format(" SELECT * FROM [dbo].[Order]");
                 SqlConnection conn = new SqlConnection(ConnectionString);
                 SqlCommand sqlCmd = new SqlCommand(sql, conn);
 
